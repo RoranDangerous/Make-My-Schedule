@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/maiinschedulel">
+
+    <TextView
+        android:text="Schedule 1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/topheadertv"
+        android:layout_weight="1000"
+        android:textSize="30sp"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mysv"
+        android:layout_weight="100">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/schedulelayout"
+            ></LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

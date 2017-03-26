@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.roran.dangerous.makemyschedule">
+
+    <supports-screens android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="false"
+        android:xlargeScreens="false" />
+
+    <!--<compatible-screens>
+        <screen android:screenSize="small" android:screenDensity="ldpi" />
+        <screen android:screenSize="small" android:screenDensity="mdpi" />
+        <screen android:screenSize="small" android:screenDensity="hdpi" />
+        <screen android:screenSize="small" android:screenDensity="xhdpi" />
+        <screen android:screenSize="normal" android:screenDensity="ldpi" />
+        <screen android:screenSize="normal" android:screenDensity="mdpi" />
+        <screen android:screenSize="normal" android:screenDensity="hdpi" />
+        <screen android:screenSize="normal" android:screenDensity="xhdpi" />
+    </compatible-screens>-->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity
+            android:name="com.roran.dangerous.makemyschedule.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.roran.dangerous.makemyschedule.chooseLabActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Custom" />
+        <activity
+            android:name="com.roran.dangerous.makemyschedule.ScheduleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.roran.dangerous.makemyschedule.SemesterProgramActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.roran.dangerous.makemyschedule.MessageReceiveActivity">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.roran.dangerous.makemyschedule.FirebaseID">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!--
+            <service
+            android:name=".VoiceRecognition"
+            android:exported="false"/>
+        -->
+        <activity android:name="com.roran.dangerous.makemyschedule.testActivity" />
+        <activity
+            android:name="com.roran.dangerous.makemyschedule.LoadingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.CustomNoClose" />
+        <activity
+            android:name="com.roran.dangerous.makemyschedule.VoiceControllInstructions"
+            android:theme="@style/AppTheme.Custom" />
+        <activity android:name="com.roran.dangerous.makemyschedule.NoInternetConnection"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "555215392119",
+    "firebase_url": "https://make-me-a-schedule.firebaseio.com",
+    "project_id": "make-me-a-schedule",
+    "storage_bucket": "make-me-a-schedule.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:555215392119:android:bed2b6150fc20979",
+        "android_client_info": {
+          "package_name": "com.roran.dangerous.makemyschedule"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "555215392119-pu0fe2iorlhgq6u4dluvn7t5rmpct07q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.roran.dangerous.makemyschedule",
+            "certificate_hash": "3d818af07d5acab70a1e462ec8ebbc85cb7b18ba"
+          }
+        },
+        {
+          "client_id": "555215392119-a8ga39ocl33ca61ijlcl7u2fupa8n4vv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJRfUOpl3FSrSV3TpUpNaRohWiowCsjtQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "555215392119-a8ga39ocl33ca61ijlcl7u2fupa8n4vv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

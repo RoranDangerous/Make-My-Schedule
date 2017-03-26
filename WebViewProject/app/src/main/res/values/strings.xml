@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Make My Schedule</string>
+    <string name="banner_ad_unit_id">ca-app-pub-7537205919736031/5053643103</string>
+    <string name="inter_ad_unit_id">ca-app-pub-7537205919736031/6700219506</string>
+    <string name="you_enabled_voice_control_here_is_a_list_of_commands_you_can_use_n">You enabled voice control. You can pick semester, number of courses and program using your voice. Here are some additional commands:\n
+        - \"exit\" or \"close\" to close the app,\n- \"back\" or \"go back\" to simulate clicking on back button,\n- \"voice control off\" to disable voice control.\nTry to reduce background noise and say commands clear and loud.
+    </string>
+</resources>
